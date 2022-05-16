@@ -1,0 +1,10 @@
+[Unit]
+Description=ESCM server - ELOG Socket Comunication Manager
+
+[Service]
+User=root
+WorkingDirectory=/home/andrea/Repository/ESCM
+ExecStart=python3 /home/andrea/Repository/ESCM/server.py
+
+[Install]
+WantedBy=multi-user.target
